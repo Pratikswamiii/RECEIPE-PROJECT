@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block start %}
+
+
+    <h1>this is index page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed quidem dolorem quo enim neque maxime sapiente facilis, iusto repudiandae cupiditate error quas odit odio porro aut consequatur voluptas debitis perspiciatis. Impedit eos vel id aliquam velit perferendis veritatis modi, iusto iste nam! Dolores, est. Quaerat, libero eveniet? Ullam, id.</p>
+    <hr>
+    <h2> topic</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae inventore culpa saepe qui voluptatem, labore excepturi sint dignissimos, porro repellat corporis. Alias officia veniam magni dolorum! Doloremque alias, quos rem architecto possimus exercitationem voluptatem tempora tenetur. Dolore inventore facere provident neque ipsum earum voluptatem obcaecati! Quidem voluptatibus officia unde fuga nemo ipsum iste similique officiis dignissimos rerum fugit totam est magnam neque quos ab odit quaerat quod id non, debitis provident. Deleniti repellendus nihil enim nemo reprehenderit tenetur eos accusantium quaerat itaque delectus fugit dolorum, ut qui facilis illo pariatur dolorem architecto ducimus. Repellat iste officia voluptas laudantium. Fugit!</p>
+
+
+  <table class="container">
+<tr>
+  <th>sr no</th>
+<th>Person</th>
+<th>Age</th>
+
+</tr>
+  {% for people in peoples %}
+<tr>
+  <td>{{forloop.counter}}</td>
+  <td>{{people.name}}</td>
+  <td>{{people.age}}</td>
+
+</tr>
+{% endfor %}
+  
+</table>
+  
+{% endblock %}
+
+
